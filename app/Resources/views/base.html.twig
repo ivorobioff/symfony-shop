@@ -26,7 +26,7 @@
 
                     {% block categrory_menu %}
                         {% for link in category_menu.getItems() %}
-                            <li><a href="{{ path(link.path) }}">{{ link.label }}</a></li>
+                            <li><a href="{{ link.path }}">{{ link.label }}</a></li>
                         {% endfor %}
                     {% endblock %}
 
@@ -36,13 +36,13 @@
                 <ul class="menu">
                     {% block customer_menu %}
                         {% for link in customer_menu.getItems() %}
-                            <li><a href="{{ path(link.path) }}">{{ link.label }}</a></li>
+                            <li><a href="{{ link.path }}">{{ link.label }}</a></li>
                         {% endfor %}
                     {% endblock %}
 
                     {% block checkout_menu %}
                         {% for link in checkout_menu.getItems() %}
-                            <li><a href="{{ path(link.path) }}">{{ link.label }}</a></li>
+                            <li><a href="{{ link.path }}">{{ link.label }}</a></li>
                         {% endfor %}
                     {% endblock %}
                 </ul>
@@ -73,7 +73,7 @@
             {% block body %}{% endblock %}
         </div>
 
-        <div class="row column">
+        <div class="row column footer">
             <ul class="menu">
                 <li><a href="{{ path('about') }}">About</a></li>
                 <li><a href="{{ path('customer_service') }}">Customer Service</a></li>

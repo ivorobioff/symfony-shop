@@ -1,0 +1,4 @@
+services:
+#    foggyline_catalog.example:
+#        class: Foggyline\CatalogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
